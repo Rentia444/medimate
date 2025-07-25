@@ -1,0 +1,49 @@
+import 'package:flutter/material.dart';
+
+class Obat {
+  String nama;
+  int qty;
+  int dosisPerHari;
+  int jumlahPerDosis;
+  List<TimeOfDay> jadwal;
+
+  Obat({
+    required this.nama,
+    required this.qty,
+    required this.dosisPerHari,
+    required this.jumlahPerDosis,
+    required this.jadwal,
+  });
+
+  Map<String, dynamic> toJson() => {
+    'nama': nama,
+    'qty': qty,
+    'dosisPerHari': dosisPerHari,
+    'jumlahPerDosis': jumlahPerDosis,
+    'jadwal': jadwal.map((t) => '${t.hour}:${t.minute}').toList(),
+  };
+
+  static Obat fromJson(Map<String, dynamic> json) {
+    final jadwalList = (json['jadwal'] as List)
+        .map((e) {
+          final parts = (e as String).split(':');
+          return TimeOfDay(hour: int.parse(parts[0]), minute: int.parse(parts[1]));
+        })
+        .toList();
+
+    return Obat(
+      nama: json['nama'], 
+      qty: json['qty'],
+      dosisPerHari: json['dosisPerHari'],
+      jumlahPerDosis: json['jumlahPerDosis'],
+      jadwal: jadwalList,
+    );
+  }
+
+  int get kebutuhanPerHari => dosisPerHari * jumlahPerDosis;
+
+  bool perluBeliObat() {
+    final hariTersisa = (qty / kebutuhanPerHari).floor();
+    return hariTersisa <= 5;
+  }
+}
