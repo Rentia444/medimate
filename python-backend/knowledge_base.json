@@ -1,0 +1,597 @@
+{
+  "kolesterol": [
+    {
+      "nama": "Atorvastatin",
+      "merk_dagang": ["Atofar", "Avesco", "Carduo", "Cholestor", "Fastor", "Genlipid", "Lipitor", "Litorcom", "Removchol", "Simtor", "Stavinor", "Truvaz"],
+      "golongan": "Statin (HMG-CoA reduktase inhibitor)",
+      "kategori_penyakit": "kolesterol",
+      "indikasi": "Obat untuk menurunkan LDL dan trigliserida serta meningkatkan HDL untuk menurunkan risiko penyakit jantung dan stroke pada pasien dewasa dan anak ≥10 tahun.",
+      "kontraindikasi": [
+        "Anak usia <10 tahun.",
+        "Wanita hamil.",
+        "Wanita menyusui.",
+        "Penyakit hati aktif atau kronis (kolestasis, hepatitis, ensefalopati hepatik, ikterus).",
+        "Hipersensitivitas terhadap atorvastatin atau komponennya."
+      ],
+      "peringatan": [
+        "Harus berhati-hati pada pasien dengan penyakit ginjal, diabetes, atau gangguan tiroid.",
+        "Hindari konsumsi alkohol tinggi karena dapat meningkatkan risiko kerusakan hati dan kadar trigliserida.",
+        "Pasien ≥65 tahun mungkin memiliki konsentrasi plasma lebih tinggi (~40%), pantau efek farmakodinamik."
+      ],
+      "dosis": [
+        "Dewasa: 10-80 mg sekali sehari; awal 10-20 mg, ditingkatkan tiap 2-4 minggu.",
+        "Anak ≥10 tahun: 10-mg, maksimal 20 mg.",
+        "Minum sekali sehari kapan saja, asalkan pada waktu yang sama."
+      ],
+      "efek_samping": [
+        "Nyeri otot/mialgia, risiko rhabdomiolisis",
+        "Pusing",
+        "Diare, dispepsia",
+        "Nyeri kepala",
+        "Elevasi enzim hati/transaminase",
+        "Berat badan meningkat"
+      ],
+      "alasan_efeksamping": [
+        
+      ],
+      "interaksi_obat": [
+        {
+          "obat": "CYP3A4 inhibitor (clarithromycin, ritonavir, ketoconazole)",
+          "efek": "Meningkatkan risiko miopati/rhabdomiolisis."
+        },
+        {
+          "obat": "Fibrat (fenofibrate, gemfibrozil)",
+          "efek": "Meningkatkan risiko gangguan otot."
+        },
+        {
+          "obat": "Antasida atau inducers CYP3A4 (rifampisin, phenytoin)",
+          "efek": "Menurunkan kadar atorvastatin."
+        },
+        {
+          "obat": "Digoxin, kontrasepsi oral",
+          "efek": "Meningkatkan kadar obat lain di plasma."
+        },
+        {
+          "obat": "Grapefruit juice",
+          "efek": "Meningkatkan bioavailabilitas dan risiko efek samping."
+        }
+      ],
+      "catatan_khusus": "Pantau fungsi hati dan CPK rutin; hentikan saat hamil; larang alkohol & grapefruit; edukasi pasien gejala miopati."
+    },
+    {
+      "nama": "Rosuvastatin",
+      "merk_dagang": ["Crestor", "Rosufer", "Rosuvastatin generic"],
+      "golongan": "Statin (HMG-CoA reduktase inhibitor)",
+      "kategori_penyakit": "Hiperkolesterolemia, dislipidemia, pencegahan kardiovaskular",
+      "indikasi": "Obat untuk menurunkan LDL dan trigliserida serta meningkatkan HDL untuk menurunkan risiko kardiovaskular pada pasien dewasa, lansia, dan beberapa anak.",
+      "kontraindikasi": [
+        "Hipersensitivitas terhadap rosuvastatin atau komponen formulasi.",
+        "Penyakit hati aktif atau peningkatan transaminase persisten yang tidak dijelaskan.",
+        "Gangguan ginjal berat.",
+        "Kehamilan (kategori FDA X) dan menyusui.",
+        "Penggunaan bersamaan dengan siklosporin dan gemfibrozil." 
+      ],
+      "peringatan": [
+        "Risiko miopati dan rabdomiolisis meningkat terutama pada dosis tinggi.",
+        "Cedera hepar akut dapat terjadi — pantau fungsi hati secara berkala.",
+        "Hematuria atau proteinuria pernah dilaporkan; pertimbangkan penurunan dosis jika menetap.",
+        "Peningkatan kadar gula darah (HbA1c dan glukosa puasa) telah dilaporkan."
+      ],
+      "dosis": [
+        "Dewasa: awal 5-10 mg sekali sehari, naik hingga maksimal 20 mg (hiperkolesterolemia ringan) atau 40 mg (risiko kardiovaskular tinggi)",
+        "Lansia >70 tahun: 5 mg",
+        "Anak 6-17 tahun: 5-20 mg.",
+        "Minum sekali sehari kapan saja, asalkan pada waktu yang sama."
+      ],
+      "efek_samping": [
+        "Nyeri otot/mialgia, risiko rabdomiolisis",
+        "Pusing, sakit kepala",
+        "Konstipasi, mual, nyeri perut",
+        "Peningkatan enzim hati",
+        "Depresi, insomnia"
+      ],
+      "interaksi_obat": [
+        {
+          "obat": "Siklosporin",
+          "efek": "Meningkatkan paparan rosuvastatin dan risiko miopati."
+        },
+        {
+          "obat": "Gemfibrozil, fenofibrate, niasin",
+          "efek": "Meningkatkan risiko miopati/rabdomiolisis."
+        },
+        {
+          "obat": "Inhibitor protease (HIV)",
+          "efek": "Risiko miopati meningkat."
+        },
+        {
+          "obat": "Antikoagulan coumarin (warfarin)",
+          "efek": "Meningkatkan INR."
+        },
+        {
+          "obat": "Kolchisin",
+          "efek": "Dilaporkan interaksi miopati/rabdomiolisis."
+        },
+        {
+          "obat": "Antasida (Al/Mg hydroxide)",
+          "efek": "Menurunkan penyerapan rosuvastatin."
+        }
+      ],
+      "catatan_khusus": "Pantau profil lipid 2-4 minggu awal; fungsi hati secara berkala; perhatikan myopati, gula darah, dan tekanan ginjal; hindari alkohol."
+    },
+    {
+      "nama": "Simvastatin",
+      "merk_dagang": ["Cholestat", "Esvat", "Kolefion", "Lextatin", "Lipivast", "Mastatin", "Mevastin", "Norpid", "Preschol", "Rendapid", "Rechol", "Rocoz", "Selvim", "Simvastatin", "Sintrol", "SVT", "Valemia"],
+      "golongan": "Statin (HMG-CoA reduktase inhibitor)",
+      "kategori_penyakit": "Hiperkolesterolemia, dislipidemia, pencegahan kardiovaskular",
+      "indikasi": "Obat untuk menurunkan kolesterol LDL dan trigliserida serta meningkatkan HDL untuk menurunkan risiko penyakit jantung dan stroke pada dewasa dan anak ≥10 tahun.",
+      "kontraindikasi": [
+        "Hipersensitivitas terhadap simvastatin atau statin lainnya.",
+        "Ibu hamil (kategori FDA X).",
+        "Ibu menyusui.",
+        "Penyakit hati aktif atau gangguan hati akut.",
+        "Terapi bersamaan dengan inhibitor kuat CYP3A4: azole antifungi, HIV protease inhibitor, antibiotik (clarithromycin, erythromycin, telithromycin), nefazodone.",
+        "Terapi bersamaan dengan gemfibrozil, siklosporin, atau danazol."
+      ],
+      "peringatan": [
+        "Risiko miopati dan rabdomiolisis meningkat saat meningkatkan dosis atau interaksi obat; pasien harus diedukasi mengenali nyeri otot dan gejala miopati.",
+        "Dapat memperburuk myasthenia gravis — pantau kondisi MG.",
+        "Hentikan jika kehamilan terjadi, FDA 2021 mencabut larangan absolut namun gunakan hanya jika manfaat jelas melebihi risiko."
+      ],
+      "dosis": [
+        "Dewasa: 10-40 mg sekali sehari pada malam hari.",
+        "Anak ≥10 tahun: 10-40 mg sesuai dokter."
+      ], 
+      "efek_samping": [
+        "Nyeri otot/mialgia",
+        "Rabdomiolisis (jarang tapi serius)",
+        "Peningkatan enzim hati",
+        "Gangguan pencernaan (konstipasi, mual)",
+        "Pusing, sakit kepala",
+        "Peningkatan gula darah"
+      ],
+      "interaksi_obat": [
+        {
+          "obat": "Inhibitor kuat CYP3A4 (azole, protease inhibitor, klaritromisin, eritromisin, telitromisin, nefazodone)",
+          "efek": "Meningkatkan kadar simvastatin dan risiko miopati/rabdomiolisis."
+        },
+        {
+          "obat": "Gemfibrozil, siklosporin, danazol",
+          "efek": "Meningkatkan risiko miopati/rabdomiolisis."
+        },
+        {
+          "obat": "Grapefruit juice",
+          "efek": "Meningkatkan kadar simvastatin hingga 3× lipat."
+        },
+        {
+          "obat": "Verapamil, diltiazem, amiodarone, amlodipine, ranolazine",
+          "efek": "Dosis perlu dibatasi karena peningkatan plasma simvastatin."
+        }
+      ],
+      "catatan_khusus": "Pantau fungsi hati dan CK sebelum dan selama terapi; hentikan jika terjadi kehamilan; edukasi gejala miopati; hindari alkohol berlebih dan grapefruit."
+    },
+    {
+      "nama": "Fenofibrate",
+      "merk_dagang": ["Tricor", "Lipofen", "Antara", "Fenogal", "Evothyl", "Hyperchol"],
+      "golongan": "Fibrat",
+      "kategori_penyakit": "Hipertrigliseridemia, dislipidemia, hiperkolesterolemia",
+      "indikasi": "Obat untuk menurunkan kadar trigliserida dan LDL serta meningkatkan HDL, digunakan sebagai terapi tambahan pada dislipidemia.",
+      "kontraindikasi": [
+        "Hipersensitivitas terhadap fenofibrate atau fibrat lain seperti gemfibrozil.",
+        "Gangguan ginjal berat (eGFR < 30 mL/min) termasuk pasien dialisis.",
+        "Penyakit hati aktif, terutama sirosis bilier primer atau gangguan fungsi hati persisten.",
+        "Penyakit kandung empedu atau pankreatitis akut/kronis.",
+        "Wanita menyusui; kehamilan kategori C (hanya jika manfaat > risiko)."
+      ],
+      "peringatan": [
+        "Risiko miopati dan rabdomiolisis meningkat, terutama pada lansia, diabetes, gagal ginjal, atau hipotiroid.",
+        "Peningkatan serum kreatinin dan enzim hati — pantau fungsi ginjal/hepar secara berkala.",
+        "Meningkatkan ekskresi kolesterol ke empedu, sehingga risiko kolelitiasis meningkat.",
+        "Pankreatitis telah dilaporkan — terutama pada pasien dengan trigliserida sangat tinggi atau batu empedu.",
+        "Gangguan hematologi seperti penurunan hemoglobin, trombositopenia, agranulositosis — perlu pantau hitung darah selama 12 bulan pertama."
+      ],
+      "dosis": [
+        "Paling umum: 145-200 mg sekali sehari (maksimal 300-400 mg/hari sesuai respons klinis).",
+        "Beberapa produk fenofibrat (Fenoglide, Lipofen, dan Lofibra) sebaiknya diminum bersama makanan. Merek lain (Antara, Fibricor, Tricor, Triglide, dan Trilipix) dapat diminum bersama atau tanpa makanan."
+      ],
+      "efek_samping": [
+        "Mual, muntah, diare, sembelit, heartburn",
+        "Sakit kepala, pusing",
+        "Nyeri otot, nyeri punggung atau kaki",
+        "Efek serius: rabdomiolisis, peningkatan enzim hati, kolelitiasis"
+      ],
+      "interaksi_obat": [
+        {
+          "obat": "Simvastatin atau statin lain",
+          "efek": "Peningkatan risiko miopati/rabdomiolisis."
+        },
+        {
+          "obat": "Colchicine",
+          "efek": "Peningkatan risiko miopati/rabdomiolisis."
+        },
+        {
+          "obat": "Ciclosporin, tacrolimus",
+          "efek": "Peningkatan risiko gangguan ginjal."
+        },
+        {
+          "obat": "Antikoagulan kumarin (warfarin)",
+          "efek": "Peningkatan risiko perdarahan; pantau INR."
+        },
+        {
+          "obat": "Cholestyramine atau colestipol",
+          "efek": "Menurunkan penyerapan fenofibrate — pisahkan dosis 1-6 jam."
+        }
+      ],
+      "catatan_khusus": "Pantau fungsi ginjal, hepar, dan CPK; pantau hitung darah 12 bulan pertama; hindari alkohol; edukasi gejala miopati dan batu empedu."
+    }
+  ],
+  "hipertensi": [
+    {
+      "nama": "Candesartan",
+      "merk_dagang": ["Blocand", "Blopress", "Candefar", "Candepress", "Canderin", "Candotens", "Desarvas", "Gionix", "Unisia"],
+      "golongan": "Angiotensin II receptor blocker (ARB)",
+      "kategori_penyakit": "Hipertensi, gagal jantung",
+      "indikasi": "Obat untuk mengontrol tekanan darah pada hipertensi dan meringankan beban kerja jantung pada gagal jantung.",
+      "kontraindikasi": [
+        "Hipersensitivitas terhadap candesartan atau komponen obat ini.",
+        "Ibu hamil (Kategori D) dan ibu menyusui.",
+        "Anak < 1 tahun atau ginjal fetogenik imatur.",
+        "Penggunaan bersamaan dengan aliskiren pada pasien diabetes atau gangguan ginjal (eGFR <60 mL/menit)."
+      ],
+      "peringatan": [
+        "Pasien dengan gangguan fungsi ginjal, hiperkalemia, hipotensi, atau penyakit hati perlu pemantauan ketat fungsi ginjal dan elektrolit."
+      ],
+      "dosis":[
+        "Untuk hipertensi pada orang dewasa, 8-32 mg sekali sehari di waktu yang sama sesuai respons (maks 32 mg)",
+        "Untuk gagal jantung pada orang dewasa, 4 mg sekali sehari di waktu yang sama, ditingkatkan tiap <2 minggu hingga 32 mg",
+        "Untuk anak 1-6 tahun 0,05-0,4 mg/kgBB/hari di waktu yang sama",
+        "Untuk anak >6 tahun dan < 50kg 4-8 mg sekali sehari di waktu yang sama",
+        "Untuk anak >6 tahun dan ≥ 50kg 8-16 mg sekali sehari di waktu yang sama."
+      ],
+      "efek_samping": [
+        "Hipotensi dan pusing",
+        "Hiperkalemia",
+        "Penurunan fungsi ginjal atau gagal ginjal akut",
+        "Reaksi alergi: ruam, angioedema",
+        "Sakit kepala, nyeri punggung"
+      ],
+      "interaksi_obat": [
+        {
+          "obat": "Aliskiren pada pasien diabetes atau gangguan ginjal",
+          "efek": "Risiko gagal ginjal dan hiperkalemia—kontraindikasi."
+        },
+        {
+          "obat": "NSAID dan diuretik berat",
+          "efek": "Menurunkan efek antihipertensi dan fungsi ginjal."
+        },
+        {
+          "obat": "Diuretik hemat kalium, heparin, suplemen kalium",
+          "efek": "Meningkatkan risiko hiperkalemia."
+        },
+        {
+          "obat": "Lithium",
+          "efek": "Peningkatan kadar serum lithium."
+        },
+        {
+          "obat": "ACE inhibitor",
+          "efek": "Risiko tinggi hiperkalemia, hipotensi, gangguan ginjal."
+        }
+      ],
+      "catatan_khusus": "Pemantauan rutin tekanan darah, fungsi ginjal & elektrolit; edukasi gejala hipotensi/hyperkalemia; hindari kombinasi dengan aliskiren pada kondisi tertentu."
+    },
+    {
+      "nama": "Amlodipine",
+      "merk_dagang": [ "Amcor", "Amlodipine Besilate", "Amlodipine Holi", "Amlodipine Besylate", "Amlodipine Hexpharm", "Amovask", "Comdipin", 
+      "Divask", "Fionvask", "Livask", "Norvask", "Opivask", 
+      "Pehavask", "Quentin", "Simvask", "Tensivask", "Zenovask", "Zevask"
+      ],
+      "golongan": "Calcium channel blocker (CCB)",
+      "kategori_penyakit": "Hipertensi",
+      "indikasi": "Obat untuk menurunkan tekanan darah pada hipertensi dan meredakan angina kronis dengan melebarkan pembuluh darah.",
+      "kontraindikasi": [
+        "Hipersensitivitas terhadap amlodipine atau dihidropiridin lainnya.",
+        "Pasien dengan syok kardiogenik.",
+        "Stenosis aorta berat.",
+        "Angina tidak stabil atau infark miokard akut.",
+        "Hipotensi berat.",
+        "Gagal jantung dengan edema paru.",
+        "Gangguan fungsi hati berat.",
+        "Ibu menyusui dan kehamilan (kategori C)."
+      ],
+      "peringatan": [
+        "Risiko hipotensi simtomatik, terutama pada pasien dengan stenosis aorta atau pada dosis awal.",
+        "Awal terapi atau peningkatan dosis dapat memperburuk angina atau meningkatkan risiko infark miokard.",
+        "Pada gangguan hati berat, eliminasi melambat—mulai dengan dosis rendah dan titrasi perlahan.",
+        "Pasien lanjut usia perlu dosis awal yang lebih rendah."
+      ],
+      "dosis": [
+        "Untuk dewasa, 5 mg sekali sehari (maks 10 mg) di waktu yang sama, mulai 2,5 mg pada pasien lanjut usia atau berisiko.",
+        "Untuk anak ≥6 tahun, 2,5-5 mg sekali sehari di waktu yang sama."
+      ],
+      "efek_samping": [
+        "Pembengkakan pada kaki dan pergelangan kaki",
+        "Pusing, sakit kepala",
+        "Flushing",
+        "Mual",
+        "Palpitasi",
+        "Hipotensi"
+      ],
+      "interaksi_obat": [
+        {
+          "obat": "Inhibitor CYP3A4 (clarithromycin, erythromycin, azole antifungi, protease inhibitor)",
+          "efek": "Meningkatkan kadar amlodipine dan risiko efek samping seperti hipotensi dan edema."
+        },
+        {
+          "obat": "Simvastatin atau lovastatin",
+          "efek": "Meningkatkan risiko miopati jika digunakan dalam dosis tinggi."
+        },
+        {
+          "obat": "Cyclosporine, tacrolimus",
+          "efek": "Meningkatkan kadar imunossupresan—perlu pemantauan."
+        },
+        {
+          "obat": "NSAID, beta-blocker, antihipertensi lain",
+          "efek": "Efek hipotensi dapat meningkat bila digunakan bersamaan."
+        }
+      ],
+      "catatan_khusus": "Pantau tekanan darah dan gejala hipotensi atau angina. Sesuaikan dosis pada pasien lanjut usia dan gangguan hati. Hindari konsumsi alkohol berlebih."
+    },
+    {
+      "nama": "Bisoprolol",
+      "merk_dagang": [
+        "Beta-One", "Bipro", "Biofin", "Biscor", "Bisoprolol Fumarate", "Bisovell", "Carbisol", "Concor", "Hapsen", "Lodoz", "Maintate", "Miniten", "Opiprol", "Selbix"
+      ],
+      "golongan": "Beta blocker selektif B1",
+      "kategori_penyakit": "Hipertensi, angina pektoris, aritmia, gagal jantung",
+      "indikasi": "Obat untuk mengobati hipertensi, angina pektoris, aritmia, dan gagal jantung kronis.",
+      "kontraindikasi": [
+        "Bradikardia (denyut jantung <50 kali/menit)",
+        "Hipotensi berat",
+        "Syok hipovolemik atau kardiogenik",
+        "Blok atrioventrikular derajat 2 dan 3",
+        "Sindrom sinus sakit tanpa pacu jantung permanen",
+        "Sindrom sinus bradikardia",
+        "Feokromositoma yang tidak tertangani",
+        "Asidosis metabolik",
+        "Penyakit arteri perifer berat",
+        "Sindrom Raynaud yang parah",
+        "Asma berat",
+        "Penyakit paru obstruktif kronik (PPOK) berat",
+        "Penyakit hati berat",
+        "Gangguan ginjal berat",
+        "Kehamilan (kategori C) dan menyusui (belum diketahui keamanannya)"
+      ],
+      "peringatan": [
+        "Penggunaan pada pasien dengan gangguan fungsi hati atau ginjal harus dilakukan dengan hati-hati dan penyesuaian dosis.",
+        "Dapat menutupi gejala hipoglikemia pada pasien diabetes.",
+        "Penghentian obat secara mendadak dapat menyebabkan eksaserbasi gejala jantung.",
+        "Perlu pemantauan denyut jantung dan tekanan darah secara rutin selama terapi."
+      ],
+      "dosis": [
+        "Untuk hipertensi, 5 mg sekali sehari di pagi hari, dapat ditingkatkan hingga 10 mg per hari.",
+        "Untuk gagal jantung, 1,25 mg sekali sehari di pagi hari, dosis dapat ditingkatkan secara bertahap hingga 10 mg per hari, tergantung toleransi pasien."
+      ],
+      "efek_samping": [
+        "Bradikardia",
+        "Hipotensi",
+        "Pusing",
+        "Insomnia",
+        "Mual",
+        "Muntah",
+        "Kelelahan",
+        "Depresi",
+        "Disfungsi seksual"
+      ],
+      "interaksi_obat": [
+        {
+          "obat": "Digoxin",
+          "efek": "Meningkatkan risiko bradikardia."
+        },
+        {
+          "obat": "Verapamil, Diltiazem",
+          "efek": "Meningkatkan risiko blok atrioventrikular dan hipotensi."
+        },
+        {
+          "obat": "Insulin, obat antidiabetes oral",
+          "efek": "Bisoprolol dapat menutupi gejala hipoglikemia."
+        },
+        {
+          "obat": "NSAID",
+          "efek": "Mengurangi efektivitas antihipertensi bisoprolol."
+        }
+      ],
+      "catatan_khusus": "Hindari penghentian obat secara mendadak tanpa konsultasi dengan dokter. Pemantauan rutin terhadap fungsi jantung dan tekanan darah diperlukan selama terapi."
+    }
+  ],
+  "diabetes": [
+    {
+      "nama": "Metformin",
+      "merk_dagang": ["Actosmet", "Adecco", "Amaryl M", "Benofomin", "Diabit", "Diafac", "Janumet", "Diaglifozmet XR", "Eraphage", "Forbetes", "Galvusmet", "Glikos", "Glucovance", "Glucophage", "Gludepatic", "Glumin XR", "Janumet XR", "Kombiglyze XR", "Metformin HCl", "Nevox XR", "Trajenta Duo", "Xigduo", "Zipio M"],
+      "golongan": "Biguanida",
+      "kategori_penyakit": "diabetes tipe 2",
+      "indikasi": "Obat untuk menurunkan kadar gula darah yang tinggi pada penderita diabetes tipe 2.",
+      "kontraindikasi": [
+        "Dikontraindikasikan pada pasien dengan gangguan ginjal berat (eGFR < 30 mL/min/1,73 m²).",
+        "Dikontraindikasikan pada pasien dengan kondisi asidosis, termasuk ketoasidosis diabetik.",
+        "Dikontraindikasikan pada pasien dengan riwayat alergi terhadap metformin."
+      ],
+      "dosis": [
+        "500 mg sekali sehari setelah makan malam, dapat ditingkatkan secara bertahap sesuai anjuran dokter."
+      ],
+      "efek_samping": [
+        "Mual",
+        "Diare",
+        "Sakit perut",
+        "Kembung"
+      ],
+      "interaksi_obat": [
+        {
+          "obat": "Obat obat antiinflamasi nonsteroid seperti ibuprofen",
+          "efek": "Meningkatkan risiko penumpukan asam laktat dalam darah (asidosis laktat)."
+        },
+        {
+          "obat": "Obat untuk tekanan darah tinggi (ACE inhibitor, ARB)",
+          "efek": "Meningkatkan risiko penumpukan asam laktat dalam darah (asidosis laktat)."
+        },
+        {
+          "obat": "Obat diuretik (obat buang air kecil)",
+          "efek": "Meningkatkan risiko penumpukan asam laktat dalam darah (asidosis laktat)."
+        },
+        {
+          "obat": "Zat kontras untuk foto rontgen",
+          "efek": "Bisa menyebabkan gangguan ginjal dan penumpukan asam laktat dalam darah (asidosis laktat)."
+        },
+        {
+          "obat": "Insulin atau obat diabetes seperti glimepiride",
+          "efek": "Bisa menyebabkan gula darah turun terlalu rendah."
+        },
+        {
+          "obat": "Obat maag seperti cimetidine",
+          "efek": "Bisa meningkatkan efek samping Metformin."
+        },
+        {
+          "obat": "Obat steroid seperti kortikosteroid",
+          "efek": "Bisa mengurangi efektivitas Metformin."
+        },
+        {
+          "obat": "Pil KB atau terapi hormon",
+          "efek": "Bisa mengurangi efektivitas Metformin."
+        },
+        {
+          "obat": "Obat pengencer darah seperti warfarin",
+          "efek": "Bisa mengurangi efektivitas obat pengencer darah."
+        }
+      ],
+      "catatan_khusus": "1. Hindari minum alkohol karena bisa meningkatkan risiko efek samping serius.\n2. Konsultasikan dokter sebelum melakukan foto rontgen dengan zat kontras.\n3. Pantau kadar gula darah secara rutin jika menggunakan obat lain untuk diabetes."
+    },
+    {
+      "nama": "Glimepiride",
+      "merk_dagang": ["Amadiab", "Amaryl", "Amaglu", "Amaryl M", "Anpiride", "Diaversa", "Friladar", "Gluvas", "Gliaride", "Glimepiride", "Glimetic", "Glimepix", "Glimefion", "Glucoryl", "Lapigim", "Metrix", "Simryl", "Paride", "Velacom", "Versibet"],
+      "golongan": "Sulfonylurea",
+      "kategori_penyakit": "diabetes tipe 2",
+      "indikasi": "Obat untuk menurunkan kadar gula darah yang tinggi pada penderita diabetes tipe 2 dengan cara merangsang pelepasan insulin dari pankreas.",
+      "kontraindikasi": [
+        "Dikontraindikasikan pada pasien dengan hipersensitivitas terhadap obat ini atau terhadap sulfa.",
+        "Dikontraindikasikan pada ibu menyusui.",
+        "Dikontraindikasikan pada pasien dengan ketoasidosis diabetik dengan atau tanpa koma (harus diterapi dengan insulin).",
+        "Dikontraindikasikan pada pasien dengan diabetes gestasional komplikata.",
+        "Dikontraindikasikan pada pasien dengan gangguan fungsi hati atau ginjal yang berat."
+      ],
+      "dosis": [
+        "1-2 mg sekali sehari sebelum sarapan atau makan utama pertama, dapat disesuaikan oleh dokter."
+      ],
+      "efek_samping": [
+        "Hipoglikemia (gula darah terlalu rendah)",
+        "Mual",
+        "Pusing",
+        "Sakit kepala",
+        "Berat badan meningkat"
+      ],
+      "interaksi_obat": [
+        {
+          "obat": "Obat antiinflamasi nonsteroid (NSAID) seperti ibuprofen",
+          "efek": "Meningkatkan risiko hipoglikemia."
+        },
+        {
+          "obat": "Obat diuretik (thiazide, furosemide)",
+          "efek": "Mengurangi efektivitas Glimepiride."
+        },
+        {
+          "obat": "Obat steroid seperti prednison",
+          "efek": "Meningkatkan kadar gula darah dan mengurangi efek Glimepiride."
+        },
+        {
+          "obat": "Beta-blocker seperti propranolol",
+          "efek": "Menyembunyikan gejala hipoglikemia."
+        },
+        {
+          "obat": "Warfarin",
+          "efek": "Meningkatkan risiko perdarahan."
+        }
+      ],
+      "catatan_khusus": "1. Hindari minum alkohol karena dapat meningkatkan risiko hipoglikemia.\n2. Pantau kadar gula darah secara rutin.\n3. Jangan melewatkan waktu makan saat menggunakan obat ini."
+    },
+    {
+      "nama": "Glibenclamide",
+      "merk_dagang": ["Velacom 2", "Velacom 3", "Glimepiride", "Versibet 3", "Amadiab 1", "Amadiab 2", "Amadiab 3", "Amadiab 4", "Velacom 1 ODT", "Glimetic 2", "Metrix", "Gluvas M", "Friladar 3", "Latibet", "Simryl 2", "Glimepix 3", "Glimepix 2", "Glimefion", "Glucoryl", "Renabetic"],
+      "golongan": "Sulfonilurea",
+      "kategori_penyakit": "diabetes tipe 2",
+      "indikasi": "Obat untuk mengendalikan kadar gula darah yang tinggi pada penderita diabetes tipe 2 dengan menstimulasi produksi insulin dari pankreas.",
+      "kontraindikasi": [
+        "Dikontraindikasikan pada pasien dengan hipersensitivitas terhadap glibenclamide atau komponen preparatnya.",
+        "Dikontraindikasikan pada pasien dengan ketoasidosis.",
+        "Dikontraindikasikan pada pasien dengan porfiria.",
+        "Dikontraindikasikan pada pasien yang mengonsumsi bosentan.",
+        "Dikontraindikasikan pada pasien dengan gangguan fungsi ginjal atau hati berat.",
+        "Dikontraindikasikan pada pasien dengan diabetes mellitus tipe 1."
+      ],
+      "dosis": [
+        "2.5-5 mg sekali sehari sebelum sarapan, dapat disesuaikan oleh dokter."
+      ],
+      "efek_samping": [
+        "Hipoglikemia (gula darah terlalu rendah)",
+        "Mual",
+        "Pusing",
+        "Sakit kepala",
+        "Berat badan meningkat"
+      ],
+      "interaksi_obat": [
+        {
+          "obat": "Obat antiinflamasi nonsteroid (NSAID) seperti ibuprofen",
+          "efek": "Meningkatkan risiko hipoglikemia."
+        },
+        {
+          "obat": "Obat diuretik (thiazide, furosemide)",
+          "efek": "Mengurangi efektivitas Glibenclamide."
+        },
+        {
+          "obat": "Obat steroid seperti prednison",
+          "efek": "Meningkatkan kadar gula darah dan mengurangi efek Glibenclamide."
+        },
+        {
+          "obat": "Beta-blocker seperti propranolol",
+          "efek": "Menyembunyikan gejala hipoglikemia."
+        },
+        {
+          "obat": "Warfarin",
+          "efek": "Meningkatkan risiko perdarahan."
+        }
+      ],
+      "catatan_khusus": "1. Hindari minum alkohol karena dapat meningkatkan risiko hipoglikemia.\n2. Pantau kadar gula darah secara rutin.\n3. Jangan melewatkan waktu makan saat menggunakan obat ini."
+    },
+    {
+      "nama": "Dapagliflozin",
+      "merk_dagang": ["Diaglifozmet XR", "Forxiga", "Xigduo XR"],
+      "golongan": "SGLT2-Inhibitor",
+      "kategori_penyakit": "diabetes tipe 2",
+      "indikasi": "Obat untuk memperbanyak pembuangan gula darah melalui urine.",
+      "kontraindikasi": [
+        "Hipersensitivitas terhadap dapagliflozin atau komponen formulasi.",
+        "Diabetes tipe 1 atau ketoasidosis diabetik.",
+        "eGFR < 25 30 mL/menit/1,73 m² (menurut kondisi ginjal berat).",
+        "Kehamilan dan menyusui (kategori risiko, tidak direkomendasikan tanpa indikasi spesifik)."
+      ],
+      "dosis": [
+        "5 mg sekali sehari di waktu yang sama; dapat ditingkatkan menjadi 10 mg sekali sehari sesuai evaluasi dokter."
+      ],
+      "efek_samping": [
+        "Hipoglikemia (terutama jika dikombinasi dengan insulin atau sulfonilurea)",
+        "Infeksi saluran kemih dan genital",
+        "Dehidrasi dan hipotensi",
+        "Pusing dan sering buang air kecil",
+        "Ketoasidosis diabetik (jarang, bisa serius)",
+        "Necrotizing fasciitis perineum (Fournier gangrene), sangat jarang"
+      ],
+      "interaksi_obat": [
+        {
+          "obat": "Diuretik (thiazide, loop)",
+          "efek": "Meningkatkan risiko dehidrasi dan hipotensi."
+        },
+        {
+          "obat": "Insulin atau sulfonilurea",
+          "efek": "Meningkatkan risiko hipoglikemia."
+        }
+      ],
+      "catatan_khusus": "Hentikan 3 hari sebelum operasi; pantau status volume dan fungsi ginjal; hindari pada kehamilan/menyusui; minum pagi hari dengan air putih dan pantau gula darah serta hidrasi."
+    }
+  ]
+}
