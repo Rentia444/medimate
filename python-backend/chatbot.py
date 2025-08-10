@@ -57,7 +57,7 @@ def log_chat(user_msg, bot_msg, log_path="chat_logs.jsonl"):
 
 # ==== Chatbot Class ====
 class Chatbot:
-    def __init__(self, kb_source=None, kb_kombinasi_source=None): # Hapus parameter 'chain' di sini
+    def __init__(self, kb_source=None, kb_kombinasi_source=None):
         # Load KB utama
         self.kb = {} 
         if isinstance(kb_source, str):
@@ -146,6 +146,36 @@ class Chatbot:
         info_k = None
         response_from_kb = None 
 
+        # Map common query terms to KB categories
+        disease_keywords = {
+            "darah tinggi": "hipertensi",
+            "hipertensi": "hipertensi",
+            "kolesterol": "kolesterol",
+            "gula darah": "diabetes",
+            "kencing manis": "diabetes",
+            "diabetes": "diabetes"
+        }
+
+        found_disease_category = None
+        for keyword, category_name in disease_keywords.items():
+            if keyword in query_norm and ("obat" in query_norm or "apa saja" in query_norm or "daftar" in query_norm):
+                found_disease_category = category_name
+                break
+        
+        if found_disease_category:
+            if found_disease_category in self.kb:
+                drugs_in_category = self.kb[found_disease_category]
+                drug_names = [drug['nama'] for drug in drugs_in_category]
+                if drug_names:
+                    response_from_kb = f"Untuk penyakit **{found_disease_category}**, beberapa contoh obat yang sering dikonsumsi oleh penderita antara lain: **{', '.join(drug_names)}**."
+                else:
+                    response_from_kb = f"Saya tidak menemukan daftar obat spesifik untuk penyakit **{found_disease_category}** dalam basis data saya."
+            else:
+                response_from_kb = f"Saya tidak memiliki informasi tentang obat untuk penyakit **{found_disease_category}** dalam basis data saya."
+            
+            log_chat(query, response_from_kb)
+            return response_from_kb
+
         # === PROSES KB KOMBINASI ===
         kombinasi_list = self.kb_kombinasi 
 
@@ -155,7 +185,7 @@ class Chatbot:
             
             if (obat_a in query_norm and obat_b in query_norm) or \
             (obat_b in query_norm and obat_a in query_norm):
-                if "bersamaan" in query_norm or "bersama" in query_norm or "kombinasi" in query_norm or "dengan" in query_norm or "barengan" in query_norm:
+                if "bersamaan" in query_norm or "bersama" in query_norm or "kombinasi" in query_norm or "dengan" in query_norm or "barengan" in query_norm or "interaksi" in query_norm:
                     info_k = item
                     break 
 
@@ -172,7 +202,7 @@ class Chatbot:
             # === DETEKSI PERTANYAAN BERDASARKAN INTENT ===
             is_efek_samping = "efek samping" in query_norm or "bengkak" in query_norm or "pembengkakan" in query_norm
             is_dosis = "dosis" in query_norm or "cara minum" in query_norm or "berapa kali" in query_norm or "kapan minum" in query_norm or "kapan" in query_norm
-            is_interaksi_obat = "interaksi" in query_norm
+            is_interaksi_obat = "interaksi obat" in query_norm
             is_catatan = "catatan khusus" in query_norm
             is_golongan = "golongan" in query_norm
             is_indikasi = "apa itu" in query_norm or "untuk apa" in query_norm
@@ -226,9 +256,7 @@ class Chatbot:
             except Exception as e:
                 return f"Maaf, terjadi kesalahan dalam pemrosesan LLM: {str(e)}. Silakan coba lagi."
         else:
-            # Ini seharusnya tidak akan pernah tercapai jika inisialisasi chain di __init__ berhasil
             return "Informasi tidak ditemukan. (Fallback LLM tidak tersedia)" 
-
 
     def format_full_info(self, nama, data):
         info = f"{nama}:"
@@ -258,9 +286,6 @@ def get_bot_response(chatbot: Chatbot, user_input: str, priority="kb-first") -> 
 
     log_chat(user_input, response)
     return response
-
-#Chatbotnya dikirim, user inputnya apa, message nya, terus kita mau pakai prioritas apa, KB first atau LLM first? KB first. Ini parameternya yang sebenarnya bisa diubah
-# dari API. 
 
 # ==== CLI ====
 if __name__ == "__main__":
