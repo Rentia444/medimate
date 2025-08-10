@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
 import '../models/obat.dart';
 import '../services/obat_service.dart';
-import 'package:medimate/services/alarm_service.dart';
+import 'package:medimate_practice/services/alarm_service.dart';
 
 class ObatInputPage extends StatefulWidget {
   final Obat? obat;
@@ -69,7 +69,7 @@ class _ObatInputPageState extends State<ObatInputPage> {
       initialDate: DateTime.now(),
       firstDate: DateTime(2000),
       lastDate: DateTime(2100),
-      helpText: 'Pilih Tanggal Pembelian', // More descriptive
+      helpText: 'Pilih Tanggal Pembelian', 
       cancelText: 'Batal',
       confirmText: 'Pilih',
       fieldLabelText: 'Tanggal Pembelian',
@@ -116,9 +116,6 @@ class _ObatInputPageState extends State<ObatInputPage> {
           content: Text('${obat.jadwal.length} alarm diatur untuk ${obat.nama}'),
         ),
       );
-
-      // Delay pop a bit to allow user to see snackbar (optional)
-      // Navigator.of(context).pop();
 
       final currentContext = context;
       if (!currentContext.mounted) return;
@@ -273,7 +270,7 @@ class _ObatInputPageState extends State<ObatInputPage> {
         fillColor: const Color(0xFFFFFFFF), // putih
         border: OutlineInputBorder(
           borderRadius: BorderRadius.circular(12),
-          borderSide: const BorderSide(color: Color(0xFFA8D5BA)), // hijau pastel
+          borderSide: const BorderSide(color: Color(0xFFA8D5BA)), 
         ),
         enabledBorder: OutlineInputBorder(
           borderRadius: BorderRadius.circular(12),

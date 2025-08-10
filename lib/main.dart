@@ -6,7 +6,7 @@ import 'screens/login_page.dart';
 import 'screens/obat_list_page.dart';
 import 'screens/chatbot_page.dart';
 import 'screens/obat_history_page.dart';
-import 'package:medimate/services/alarm_service.dart';
+import 'package:medimate_practice/services/alarm_service.dart';
 import 'package:timezone/data/latest_all.dart' as tz; 
 import 'package:timezone/timezone.dart' as tz;
 //import 'package:flutter_native_timezone/flutter_native_timezone.dart';
@@ -26,6 +26,13 @@ class AppRoutes {
 // Deklarasikan instance plugin secara global agar bisa diakses oleh AlarmService
 final FlutterLocalNotificationsPlugin flutterLocalNotificationsPlugin =
     FlutterLocalNotificationsPlugin();
+
+// This is the new, top-level function for the background handler
+@pragma('vm:entry-point') // Required for background execution
+void onDidReceiveBackgroundNotificationResponse(NotificationResponse notificationResponse) {
+  // Your existing logic here
+  debugPrint('notification background payload: ${notificationResponse.payload}');
+}
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -62,20 +69,17 @@ void main() async {
 
   try {
     await flutterLocalNotificationsPlugin.initialize(
-      initializationSettings,
-      onDidReceiveNotificationResponse: (NotificationResponse notificationResponse) async {
-        final String? payload = notificationResponse.payload;
-        if (payload != null) {
-          debugPrint('notification payload: $payload');
-          // if (MyApp.navigatorKey.currentState != null) {
-          //   MyApp.navigatorKey.currentState!.pushNamed(AppRoutes.obatList, arguments: payload);
-          // }
-        }
-      },
-      onDidReceiveBackgroundNotificationResponse: (NotificationResponse notificationResponse) async {
-        debugPrint('notification background payload: ${notificationResponse.payload}');
-      },
-    );
+  initializationSettings,
+  onDidReceiveNotificationResponse: (NotificationResponse notificationResponse) async {
+    final String? payload = notificationResponse.payload;
+    if (payload != null) {
+      debugPrint('notification payload: $payload');
+      // navigation logic if needed
+    }
+  },
+  onDidReceiveBackgroundNotificationResponse: onDidReceiveBackgroundNotificationResponse, // ✅ use top-level fn
+);
+
     debugPrint('FlutterLocalNotificationsPlugin initialized successfully.');
   } catch (e) {
     debugPrint('Error initializing FlutterLocalNotificationsPlugin: $e');

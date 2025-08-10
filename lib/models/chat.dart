@@ -11,7 +11,6 @@ class ChatMessage {
     this.isError = false,
   });
 
-  // ✅ Tambahkan ini
   factory ChatMessage.fromJson(Map<String, dynamic> json) {
     return ChatMessage(
       text: json['text'],
@@ -21,7 +20,6 @@ class ChatMessage {
     );
   }
 
-  // ✅ Tambahkan ini juga
   Map<String, dynamic> toJson() {
     return {
       'text': text,

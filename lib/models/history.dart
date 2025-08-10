@@ -11,7 +11,6 @@ class MedicationHistory {
     this.wasTaken = true,
   });
 
-  // Add these methods to your model
   factory MedicationHistory.fromJson(Map<String, dynamic> json) {
     return MedicationHistory(
       medicineName: json['medicineName'],

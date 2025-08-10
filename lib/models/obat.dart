@@ -1,4 +1,3 @@
-// lib/models/obat.dart
 import 'package:flutter/material.dart';
 
 class Obat {
@@ -21,10 +20,10 @@ class Obat {
     required this.purchaseDate,
     required this.usageNotes,
     List<DateTime>? takenDates,
-  }) : 
-    takenDates = takenDates ?? [],
-    nextPurchaseDate = purchaseDate.add(const Duration(days: 30)); // Default 30 days
-
+  }) :
+    takenDates = takenDates ??[],
+    nextPurchaseDate = purchaseDate.add(const Duration(days: 30));
+  
   Map<String, dynamic> toJson() => {
     'nama': nama,
     'qty': qty,

@@ -36,7 +36,7 @@ class ObatService {
     final obat = list[index];
 
     if (obat.qty < obat.jumlahPerDosis) {
-      return false; // stok tidak cukup
+      return false; // not enough stock
     }
 
     // Kurangi stok dan catat tanggal konsumsi
@@ -129,7 +129,7 @@ class ObatService {
     final list = await getObatList();
     final index = list.indexWhere((o) => o.nama == namaObat);
     if (index != -1) {
-      list[index].confirmTaken(); // Uses your existing confirmTaken() method
+      list[index].confirmTaken(); 
       await _saveAll(list);
     }
   }

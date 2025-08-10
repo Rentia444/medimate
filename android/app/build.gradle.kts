@@ -5,28 +5,29 @@ plugins {
 }
 
 android {
-    namespace = "com.example.medimate" // Pastikan ini sesuai dengan package aplikasi Anda
-    compileSdk = 34 // flutter.compileSdkVersion
-    ndkVersion = "27.0.12077973" // Versi NDK yang dibutuhkan
+    namespace = "com.example.medimate_practice"
+    compileSdk = 34 //flutter.compileSdkVersion
+    ndkVersion = "27.0.12077973" //flutter.ndkVersion
 
     compileOptions {
-        isCoreLibraryDesugaringEnabled = true
-        sourceCompatibility = JavaVersion.VERSION_11 // Diperlukan untuk desugaring
-        targetCompatibility = JavaVersion.VERSION_11 // Diperlukan untuk desugaring
+        isCoreLibraryDesugaringEnabled = true //Untuk menjalankan flutter notifications
+        sourceCompatibility = JavaVersion.VERSION_11
+        targetCompatibility = JavaVersion.VERSION_11
     }
 
     kotlinOptions {
-        jvmTarget = JavaVersion.VERSION_11.toString() // Tetap Java 11 untuk Kotlin
+        jvmTarget = JavaVersion.VERSION_11.toString()
     }
-
+    
     buildFeatures {
-        // Disable Play Store deferred components
-        // This tells Flutter not to use SplitCompat or PlayCore
         buildConfig = true
     }
 
     defaultConfig {
-        applicationId = "com.example.medimate" // ID aplikasi Anda
+        // TODO: Specify your own unique Application ID (https://developer.android.com/studio/build/application-id.html).
+        applicationId = "com.example.medimate_practice"
+        // You can update the following values to match your application needs.
+        // For more information, see: https://flutter.dev/to/review-gradle-config.
         minSdk = 21 //flutter.minSdkVersion
         targetSdk = 34 //flutter.targetSdkVersion
         versionCode = flutter.versionCode

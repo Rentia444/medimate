@@ -1,4 +1,3 @@
-// lib/screens/login_page.dart
 import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
@@ -16,7 +15,7 @@ class _LoginPageState extends State<LoginPage> {
     final prefs = await SharedPreferences.getInstance();
     await prefs.setString('username', _nameController.text.trim());
 
-    if (!mounted) return; // ⬅️ Tambahkan ini
+    if (!mounted) return;
 
     Navigator.pushReplacementNamed(context, '/obat-list');
   }

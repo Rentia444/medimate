@@ -32,7 +32,6 @@ class _ObatHistoryPageState extends State<ObatHistoryPage> {
 
   @override
   void dispose() {
-    // _controller.dispose(); // If you had any controllers
     super.dispose();
   }
 
@@ -53,8 +52,6 @@ class _ObatHistoryPageState extends State<ObatHistoryPage> {
   Map<DateTime, List<dynamic>> _groupEventsByDate(List<Map<String, dynamic>> history) {
     Map<DateTime, List<dynamic>> data = {};
     for (var entry in history) {
-      // Assuming 'date' or 'scheduledTime' from your service returns a DateTime object
-      // If it's a string, you might need to parse it: DateTime.parse(entry['date'])
       final DateTime eventDate = _showMissedDoses
           ? (entry['scheduledTime'] is DateTime ? entry['scheduledTime'] : DateTime.parse(entry['scheduledTime']))
           : (entry['date'] is DateTime ? entry['date'] : DateTime.parse(entry['date']));

@@ -55,7 +55,7 @@ class _ChatbotPageState extends State<ChatbotPage> {
       final response = await http.post(
         Uri.parse(_apiUrl),
         headers: {'Content-Type': 'application/json'},
-        body: json.encode({'message': text}), // Matches your Flask API
+        body: json.encode({'message': text}), 
       ).timeout(const Duration(seconds: 30));
 
       if (!mounted) return;
@@ -72,7 +72,7 @@ class _ChatbotPageState extends State<ChatbotPage> {
           ));
         });
 
-        await _saveChatHistory(); // Simpan riwayat setelah bot menjawab
+        await _saveChatHistory(); 
 
       } else {
         throw "Request failed with status ${response.statusCode}";
@@ -140,7 +140,7 @@ class _ChatbotPageState extends State<ChatbotPage> {
           style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
         ),
         centerTitle: true,
-        toolbarHeight: 70, // Lebih tinggi dari default
+        toolbarHeight: 70, 
       ),
       body: SafeArea(
         child: Column(
@@ -155,7 +155,7 @@ class _ChatbotPageState extends State<ChatbotPage> {
                   final message = _messages[index];
                   return ChatBubble(
                     message: message,
-                    fontSize: 18, // Ukuran font lebih besar
+                    fontSize: 18, 
                   );
                 },
               ),
@@ -167,7 +167,7 @@ class _ChatbotPageState extends State<ChatbotPage> {
                 left: 16,
                 right: 16,
                 top: 12,
-                bottom: 12 + bottomPadding, // Tambah padding untuk navigasi bar
+                bottom: 12 + bottomPadding,
               ),
               color: Colors.grey[50],
               child: Row(
@@ -187,7 +187,7 @@ class _ChatbotPageState extends State<ChatbotPage> {
                       ),
                       child: TextField(
                         controller: _controller,
-                        style: TextStyle(fontSize: 18), // Font lebih besar
+                        style: TextStyle(fontSize: 18), 
                         decoration: InputDecoration(
                           hintText: 'Tanyakan tentang obat...',
                           hintStyle: TextStyle(fontSize: 18),

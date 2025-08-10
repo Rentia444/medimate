@@ -70,7 +70,7 @@ class _ObatListPageState extends State<ObatListPage> {
     }
   }
 
-  Future<void> _refreshData() async {  // Added async and Future<void>
+  Future<void> _refreshData() async {  
     setState(() {
       _obatListFuture = ObatService.getObatList();
     });
@@ -118,12 +118,12 @@ class _ObatListPageState extends State<ObatListPage> {
 
     if (confirm == true) {
       try {
-        await ObatService.deleteObat(obat.nama); // Asumsikan Anda memiliki metode deleteObat di ObatService
+        await ObatService.deleteObat(obat.nama); 
         if (mounted) {
           ScaffoldMessenger.of(context).showSnackBar(
             SnackBar(content: Text('${obat.nama} berhasil dihapus')),
           );
-          _refreshData(); // Muat ulang daftar obat setelah penghapusan
+          _refreshData(); 
         }
       } catch (e) {
         if (mounted) {
@@ -134,31 +134,6 @@ class _ObatListPageState extends State<ObatListPage> {
       }
     }
   }
-
-  //Future<void> _handleReset() async {
-  //  try {
-  //    await TestHelper.fullReset();
-  //    
-      // Proper mounted check for State's context
-  //    if (!mounted) return;
-      
-      // Refresh UI
-  //    setState(() {});
-      
-      // Get fresh context for Scaffold
-  //    final freshContext = context;
-  //    if (!freshContext.mounted) return;
-      
-  //    ScaffoldMessenger.of(freshContext).showSnackBar(
-  //      const SnackBar(content: Text('Data berhasil direset')),
-  //    );
-  //  } catch (e) {
-  //    if (!mounted) return;
-  //    ScaffoldMessenger.of(context).showSnackBar(
-  //      SnackBar(content: Text('Error: ${e.toString()}')),
-  //    );
-  //  }
-  //}
 
   List<Obat> _filterObatList(List<Obat> obatList, String query) {
     if (query.isEmpty) return obatList;
@@ -176,42 +151,17 @@ class _ObatListPageState extends State<ObatListPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: const Color(0xFF388E3C), // Hijau tua
+        backgroundColor: const Color(0xFF388E3C), 
         title: const Text(
           'Daftar Obat',
           style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
         ),
-        //actions: [
-          //IconButton(
-          //  icon: const Icon(Icons.search, size: 32),
-          //  onPressed: () => showSearch(
-          //    context: context,
-          //    delegate: _ObatSearchDelegate(_refreshData),
-          //  ),
-          //),
-          //IconButton(
-          //  icon: const Icon(Icons.chat),
-          //  onPressed: () => Navigator.pushNamed(context, '/chatbot'),
-          //),
-          //IconButton(
-          //  icon: const Icon(Icons.history, size: 32),
-          //  onPressed: () => Navigator.pushNamed(context, '/obat-history'),
-          //),
-          //IconButton(
-          //  icon: const Icon(Icons.delete_forever),
-          //  onPressed: () => _handleReset(), // No context passed here
-          //),
-          //IconButton(
-          //  icon: const Icon(Icons.logout),
-          //  onPressed: _logout,
-          //),
-        //],
       ),
       floatingActionButton: FloatingActionButton.extended(
         onPressed: () => _navigateToInputPage(),
         icon: const Icon(Icons.add),
         label: const Text('Tambah Obat'),
-        backgroundColor: const Color(0xFF66BB6A), // Hijau terang kontras
+        backgroundColor: const Color(0xFF66BB6A), 
       ),
       body: Column(
         children: [
@@ -220,14 +170,6 @@ class _ObatListPageState extends State<ObatListPage> {
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
-                //_buildActionIcon(
-                //  icon: Icons.search,
-                //  label: 'Cari Obat',
-                //  onTap: () => showSearch(
-                //    context: context,
-                //    delegate: _ObatSearchDelegate(_refreshData),
-                //  ),
-                //),
                 _buildActionIcon(
                   icon: Icons.chat,
                   label: 'Chatbot',
@@ -477,75 +419,3 @@ class _ObatListPageState extends State<ObatListPage> {
     );
   }
 }
-
-/* class _ObatSearchDelegate extends SearchDelegate {
-  final Function() refreshData;
-
-  _ObatSearchDelegate(this.refreshData);
-
-  @override
-  List<Widget> buildActions(BuildContext context) {
-    return [
-      IconButton(
-        icon: const Icon(Icons.clear),
-        onPressed: () {
-          query = '';
-        },
-      ),
-    ];
-  }
-
-  @override
-  Widget buildLeading(BuildContext context) {
-    return IconButton(
-      icon: const Icon(Icons.arrow_back),
-      onPressed: () {
-        close(context, null);
-      },
-    );
-  }
-
-  @override
-  Widget buildResults(BuildContext context) {
-    return _buildSearchResults();
-  }
-
-  @override
-  Widget buildSuggestions(BuildContext context) {
-    return _buildSearchResults();
-  }
-
-  Widget _buildSearchResults() {
-    return FutureBuilder<List<Obat>>(
-      future: ObatService.getObatList(),
-      builder: (context, snapshot) {
-        if (!snapshot.hasData) {
-          return const Center(child: CircularProgressIndicator());
-        }
-
-        final results = snapshot.data!.where((obat) =>
-          obat.nama.toLowerCase().contains(query.toLowerCase())).toList();
-
-        return ListView.builder(
-          itemCount: results.length,
-          itemBuilder: (context, index) {
-            final obat = results[index];
-            return ListTile(
-              title: Text(obat.nama),
-              subtitle: Text('Stok: ${obat.qty}'),
-              onTap: () {
-                close(context, null);
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                    builder: (context) => ObatInputPage(obat: obat),
-                  ),
-                ).then((_) => refreshData());
-              },
-            );
-          },
-        );
-      },
-    );
-  }
-} */
