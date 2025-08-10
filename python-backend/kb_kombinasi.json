@@ -3,12 +3,27 @@
       {
          "obat_a":"Amlodipine",
          "obat_b":"Simvastatin",
-         "jawaban":"Amlodipine dapat meningkatkan kadar simvastatin dalam darah hingga dua kali lipat, yang meningkatkan risiko efek samping seperti mialgia atau rabdomyolisis. Jika digunakan bersama, dosis simvastatin sebaiknya dibatasi maksimal 20 mg per hari; penggunaan dosis lebih tinggi adalah off-label. Alternatif seperti pravastatin, rosuvastatin, atau atorvastatin dapat dipertimbangkan jika diperlukan."
+         "jawaban":"Amlodipine dapat meningkatkan kadar simvastatin dalam darah hingga dua kali lipat, yang meningkatkan risiko efek samping seperti mialgia atau rabdomyolisis. Jika digunakan bersama, dosis simvastatin sebaiknya dibatasi maksimal 20 mg per hari; penggunaan dosis lebih tinggi adalah off-label. Alternatif seperti pravastatin, rosuvastatin, atau atorvastatin dapat dipertimbangkan jika diperlukan."
       },
       {
          "obat_a":"Metformin",
          "obat_b":"Atorvastatin",
          "jawaban":"Metformin dan atorvastatin aman dikonsumsi secara bersamaan. Kombinasi kedua obat ini bahkan bisa membantu menjaga kesehatan jantung, terutama bagi penderita diabetes. Tidak ada efek samping berbahaya yang diketahui saat keduanya diminum bersamaan. Meski begitu, tetap disarankan untuk rutin memeriksakan kadar gula darah dan fungsi hati sesuai arahan dokter."
+      },
+      { 
+         "obat_a":"Amlodipine",
+         "obat_b":"Metformin",
+         "jawaban": "Interaksi ini dikategorikan memiliki tingkat keparahan moderat dan dapat menyebabkan efek hipoglikemik. Berpotensi tinggi menyebabkan hipoglikemia moderat pada pasien diabetes tipe 2 dengan hipertensi."
+      },
+      {
+         "obat_a":"Candesartan",
+         "obat_b":"Bisoprolol",
+         "jawaban":"Kombinasi dengan bisoprolol terkadang dapat menurunkan tekanan darah Anda terlalu drastis, yang dapat menyebabkan Anda merasa pusing atau pingsan. Jika hal ini terus terjadi pada Anda, beri tahu dokter Anda, supaya dapat diubah dosis Anda."
+      },
+      {
+         "obat_a":"Candesartan",
+         "obat_b":"Metformin",
+         "jawaban":"Meskipun belum ada interaksi signifikan yang dilaporkan antara metformin dan candesartan, konsultasikan dengan tenaga kesehatan profesional sebelum menggabungkannya tetap penting. Kombinasi candesartan (atau kombinasinya dengan hidroklorotiazid) dan metformin dapat meningkatkan risiko asidosis laktat, suatu kondisi yang jarang namun serius, dan juga dapat memengaruhi kadar gula darah."
       }
    ]
 }
