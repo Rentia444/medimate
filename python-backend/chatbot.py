@@ -31,19 +31,11 @@ PETUNJUK PENTING:
 Jika pertanyaan berkaitan dengan 'mengapa', 'bagaimana', 'apa yang harus dilakukan', atau mencari penjelasan yang lebih mendalam dari data faktual, berikan jawaban yang informatif namun tetap ringkas dan fokus pada topik medis. Jika saran medis diperlukan, selalu tekankan pentingnya konsultasi dengan profesional kesehatan.
 [/INST]"""
 
-# prompt (tetap sama)
+# prompt
 prompt = ChatPromptTemplate.from_messages([
     ("system", SYSTEM_PROMPT),
     ("human", "{input}")
 ])
-
-# ask_llm function (tetap sama, akan menggunakan self.chain)
-def ask_llm(query: str) -> str: # Ini tidak lagi relevan jika ask_llm hanya dipanggil dari dalam class Chatbot
-    # Fungsi ask_llm ini sebenarnya tidak lagi diperlukan sebagai fungsi global terpisah
-    # karena pemanggilan LLM sekarang dihandle sepenuhnya di dalam metode get_info
-    # dan menggunakan self.chain.
-    pass
-
 
 # ==== Logging ====
 def log_chat(user_msg, bot_msg, log_path="chat_logs.jsonl"):
@@ -290,7 +282,6 @@ def get_bot_response(chatbot: Chatbot, user_input: str, priority="kb-first") -> 
 # ==== CLI ====
 if __name__ == "__main__":
     try:
-        # PENTING: Sekarang, tidak perlu lagi meneruskan 'chain' sebagai parameter
         bot = Chatbot(kb_source="knowledge_base.json", kb_kombinasi_source="kb_kombinasi.json") 
         print("Chatbot Medis Penyakit Kronis. Ketik 'exit' untuk keluar.")
         while True:
